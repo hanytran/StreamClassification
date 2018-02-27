@@ -850,19 +850,4 @@ public class Massaging {
 	             return sortedArray;
 	}   // End of sorting function
 	
-	
-  	
-	public static void remove_fnlwgt(String filenameIn, String filenameOut) throws FileNotFoundException{
-		ArffFileStream fs = new ArffFileStream(filenameIn, -1);		
-		PrintWriter writer = new PrintWriter(filenameOut);
-		writer.write(fs.getHeader().toString());
-		while (fs.hasMoreInstances()){
-			Instance inst = fs.nextInstance().instance;
-			String[] splits = inst.toString().split(",");			
-			writer.write(splits[0]+", "+splits[1]+", "+splits[3]+", "+splits[4]+", "+
-					splits[5]+", "+splits[6]+", "+splits[7]+", "+splits[8]+", "+splits[9]+", "+
-					splits[10]+", "+splits[11]+", "+splits[12]+", "+splits[13]+", "+splits[14]+"\n");
-		}
-		writer.close();
-	}
 }
