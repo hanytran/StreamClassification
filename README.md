@@ -1,2 +1,3 @@
 # StreamClassification
-Classification method for imbalanced and biased (discriminary) data in stream.
+Classification method for imbalanced and biased (discriminatory) data in stream.
+1. Massaging
